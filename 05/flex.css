@@ -13,4 +13,8 @@ body {
   
   justify-content: center;
   align-items: center;
+  
+  flex-basis: 200px;
 }
+
+
