@@ -1,11 +1,16 @@
 body {
   display: flex;
   
+/*
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+*/
   
   justify-content: center;
   align-content: flex-start;
+  
+/*  flex-flow: flex-direction flex-wrap;*/
+  flex-flow: row nowrap;
 }
 
 .card {
@@ -14,6 +19,9 @@ body {
   justify-content: center;
   align-items: center;
   
-  flex-basis: 100px;
+/*  flex-basis: 100px;*/
   order: 0;
+  
+/*  flex: flex-grow flex-shrink flex-basis;*/
+  flex: 1 100px;
 }
