@@ -15,4 +15,13 @@ body {
   align-items: center;
   
   flex-basis: 100px;
+  flex-shrink: 1;
+}
+
+.card:nth-child(3) { 
+  flex-shrink: 2;
+}
+
+.card:nth-child(5) {
+  flex-shrink: 0;
 }
