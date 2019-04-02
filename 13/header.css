@@ -64,6 +64,7 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  overflow: hidden;
 }
 
 .channel-header_link {
@@ -104,6 +105,33 @@
   right: 0;
 }
 
+.channel-header_search {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: #606060;
+  font-size: 15px;
+}
+
 .channel-header_prev {
+  display: none !important;
   left: calc(100px - 48px);
+}
+
+@media (max-width: 700px) {
+  .channel-header_avatar {
+    display: none;
+  }
+  
+  .channel-header_details {
+    padding: 16px 80px 0;
+  }
+  
+  .channel-header_nav {
+    padding: 0 80px;
+  }
+  
+  .channel-header_name {
+    font-size: 18px;
+  }
 }
