@@ -18,6 +18,9 @@ body {
   display: flex;
   align-items: center;
   background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .site-nav_logo-link {
@@ -117,3 +120,14 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 400px) {
+  .is-mobile-hidden {
+    display: none;
+  }
+  
+  .site-nav_user-actions {
+    width: 200px;
+  }
+}
+  
